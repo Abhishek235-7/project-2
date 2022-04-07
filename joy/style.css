@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background: transparent;
+}
+
+nav ul {
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+nav #icon {
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.head {
+    margin: 20px;
+    display: flex;
+    margin-left: 100px;
+    justify-content: center;
+}
+
+.text {
+    width: 45%;
+    height: 300px;
+}
+
+.text p {
+    margin: 10px;
+}
+
+.text h1 {
+    margin: 10px;
+}
+
+.text a {
+    background-color: blue;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+   display: inline-block;
+}
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+
+.img img {
+    width: 300px;
+    height: 300px;
+}
+
+.middle{
+    background-color: rgb(176, 216, 235);
+    display: flex;
+    justify-content: center;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+}
+.half-width{
+    width: 50%;
+}
+.baner p{
+    text-align: justify;
+}
+.recent-post-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recent-post-content{
+    background-color: white;
+    padding: 10px;
+    margin: 0px 20px 20px 0px;
+}
+.footer{
+    margin: 40px;
+    display: block;
+    justify-content: center;
+    padding: 40px;
+}
+.img-2 img{
+    width: 80%;
+    height: 150px;
+}
+.footer-content{
+    display: flex;
+    width: 100%;
+    margin: 10px;
+}
+.footer-content h1{
+    margin-bottom: 20px;
+}
+#date{
+    background-color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 20px;
+    color: white;
+    margin: 10px;
+    font-weight: bold;
+}
+.footer-content p{
+    color: gray;
+}
+.p{
+    margin-top: 10px;
+    color: black;
+}
+.footer-post{
+    width: 50%;
+   
+}
+.footer-content-1{
+    display: flex;
+    width: 100%;
+    margin: 10px;
+}
+.footer-view{
+    text-decoration: none;
+    display: none;
+}
+#copy{
+    font-weight: bold;
+}
+.footer-copy{
+    text-align: center;
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1048px) {
+    nav ul {
+        margin-right: 20px;
+    }
+
+    nav a {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 909px) {
+    nav #icon {
+        display: block;
+
+
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(198, 227, 238);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    a.active,
+    a:hover {
+        border: none;
+        color: blue;
+    }
+
+    nav ul.show {
+        left: 0;
+    }
+    .head {
+        margin: 20px;
+        display: block;
+        margin-left: 100px;
+    }
+    
+    .text {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .text p {
+        margin: 10px;
+    }
+    
+    .text h1 {
+        margin: 10px;
+    }
+    
+    .text a {
+        background-color: blue;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+       display: inline-block;
+    }
+    .img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .img img {
+        width: 300px;
+        height: 300px;
+    }
+    .banner{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .half-width{
+        width: 100%;
+    }
+    .recent-post-top{
+        margin: 20px;
+    }
+    .footer-content-1{
+        display: none;
+    }
+    .footer-view{
+        text-decoration: none;
+        display: contents;
+    }
+    .footer{
+        text-align: center;
+    }
+   
+    
+
+}
